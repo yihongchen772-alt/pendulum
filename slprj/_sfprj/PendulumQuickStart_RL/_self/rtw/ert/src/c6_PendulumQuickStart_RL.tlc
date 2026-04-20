@@ -1,0 +1,159 @@
+%implements "chartSource" "C"
+%function ChartConfig(block, system) void
+  %createrecord chartConfiguration { ...
+          executeAtInitialization  0 ...
+  }
+  %return chartConfiguration
+%endfunction
+%function ChartDataMap(block, system) void
+  %createrecord ChartDataElements {\
+    NumChartData   20 \
+    ChartDataDefaults {\
+      RecordType   "ChartData"\
+      Dimensions   []\
+      IsTestPoint  0\
+    }\
+    ChartData {\
+      Name         "sfEvent"\
+      Description  "ActiveChartEvent"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "doneDoubleBufferReInit"\
+      Description  "DoubleBufferInitCheck"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "torqueval"\
+      Description  "EmlPersistent"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "PendulumQuickStart_RL:1285:66-75"\
+    }\
+    ChartData {\
+      Name         "torqueval_not_empty"\
+      Description  "EmlPersistentSentinel"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "PendulumQuickStart_RL:1285:66-75"\
+    }\
+    ChartData {\
+      Name         "state"\
+      Description  "EmlPersistent"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "PendulumQuickStart_RL:1285:87-92"\
+    }\
+    ChartData {\
+      Name         "state_not_empty"\
+      Description  "EmlPersistentSentinel"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "PendulumQuickStart_RL:1285:87-92"\
+    }\
+    ChartData {\
+      Name         "precartEnc"\
+      Description  "EmlPersistent"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "PendulumQuickStart_RL:1285:104-114"\
+    }\
+    ChartData {\
+      Name         "precartEnc_not_empty"\
+      Description  "EmlPersistentSentinel"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "PendulumQuickStart_RL:1285:104-114"\
+    }\
+    ChartData {\
+      Name         "homeval"\
+      Description  "EmlPersistent"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "PendulumQuickStart_RL:1285:126-133"\
+    }\
+    ChartData {\
+      Name         "homeval_not_empty"\
+      Description  "EmlPersistentSentinel"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "PendulumQuickStart_RL:1285:126-133"\
+    }\
+    ChartData {\
+      Name         "counter"\
+      Description  "EmlPersistent"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "PendulumQuickStart_RL:1285:145-152"\
+    }\
+    ChartData {\
+      Name         "counter_not_empty"\
+      Description  "EmlPersistentSentinel"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "PendulumQuickStart_RL:1285:145-152"\
+    }\
+    ChartData {\
+      Name         "i"\
+      Description  "EmlPersistent"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "PendulumQuickStart_RL:1285:164-165"\
+    }\
+    ChartData {\
+      Name         "i_not_empty"\
+      Description  "EmlPersistentSentinel"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "PendulumQuickStart_RL:1285:164-165"\
+    }\
+    ChartData {\
+      Name         "precart"\
+      Description  "EmlPersistent"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "PendulumQuickStart_RL:1285:177-184"\
+    }\
+    ChartData {\
+      Name         "precart_not_empty"\
+      Description  "EmlPersistentSentinel"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "PendulumQuickStart_RL:1285:177-184"\
+    }\
+    ChartData {\
+      Name         "prepos"\
+      Description  "EmlPersistent"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "PendulumQuickStart_RL:1285:196-202"\
+    }\
+    ChartData {\
+      Name         "prepos_not_empty"\
+      Description  "EmlPersistentSentinel"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "PendulumQuickStart_RL:1285:196-202"\
+    }\
+    ChartData {\
+      Name         "precartArray"\
+      Description  "EmlPersistent"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "PendulumQuickStart_RL:1285:214-226"\
+      Dimensions   [1,10]\
+    }\
+    ChartData {\
+      Name         "precartArray_not_empty"\
+      Description  "EmlPersistentSentinel"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "PendulumQuickStart_RL:1285:214-226"\
+    }\
+  }
+  %return ChartDataElements
+%endfunction

@@ -1,0 +1,1135 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><link rel="stylesheet" type="text/css" href="rtwreport.css" /><script language="JavaScript" type="text/javascript" src="rtwshrink.js"></script><script>function postParentWindowMessage(message) {window.parent.postMessage(message, "*");}</script><style> h3 { margin-bottom: 1ex; } h4.function {   font-size: larger; font-weight: normal;   color: #c05709;	margin-bottom: 0ex; } .description {	border-style: none;	color: DimGray; } .footnote { margin-top: 0.5ex; font-size: small; color: DimGray;} a:visited, a:hover { color: #004b87 } ul.services { margin-top: 0.5ex; } .include { color: #992211 } a.include:link { color:inherit; text-decoration: none } a.include:hover { text-decoration: underline } a.fcn:link { color:inherit; text-decoration: none } a.fcn:hover { text-decoration: underline } code.usage { white-space: pre-wrap; } .programlisting {   margin-left: 4ex; margin-right: 4ex;   margin-top: 2ex;  margin-bottom: 2ex; } .tooltip { position: relative; display: inline-block; } .tooltip .tooltip-text {   visibility: hidden;   position: absolute;   top: 110%;   left: 0;   background-color: white;   z-index: 1;   box-shadow: 5px 5px 10px 5px Gainsboro;   border-radius: 10px;   padding: 10px 15px 0px; } .tooltip:hover .tooltip-text { visibility: visible; } .tooltip-text .footnote { white-space: nowrap;} </style><title>
+PendulumQuickStart_RL 的代码接口报告
+</title>
+
+</head>
+<body>
+<h1>
+PendulumQuickStart_RL 的代码接口报告
+</h1>
+<div>
+
+</div>
+<div id="table_of_contents">
+<h3>
+目录
+</h3>
+<ol>
+<li>
+<a href="#sec_introduction" onclick="rtwTableExpand(window.document, window.document.getElementById('rtwIdDataInterface_table_001_control'), 'rtwIdDataInterface_table_001')">
+简介
+</a>
+
+</li>
+<li>
+<span>
+<a href="#sec_execution" onclick="rtwTableExpand(window.document, window.document.getElementById('rtwIdDataInterface_table_002_control'), 'rtwIdDataInterface_table_002')">
+函数接口
+</a>
+<ul>
+<li>
+<a href="#sec_initialize_functions" onclick="rtwTableExpand(window.document, window.document.getElementById('rtwIdDataInterface_table_002_control'), 'rtwIdDataInterface_table_002')">
+初始化函数
+</a>
+
+</li>
+<li>
+<a href="#sec_terminate_functions" onclick="rtwTableExpand(window.document, window.document.getElementById('rtwIdDataInterface_table_002_control'), 'rtwIdDataInterface_table_002')">
+终止函数
+</a>
+
+</li>
+<li>
+<a href="#sec_periodic_functions" onclick="rtwTableExpand(window.document, window.document.getElementById('rtwIdDataInterface_table_002_control'), 'rtwIdDataInterface_table_002')">
+周期函数
+</a>
+
+</li>
+<li>
+<a href="#sec_aperiodic_functions" onclick="rtwTableExpand(window.document, window.document.getElementById('rtwIdDataInterface_table_002_control'), 'rtwIdDataInterface_table_002')">
+非周期函数
+</a>
+
+</li>
+
+</ul>
+</span>
+
+</li>
+<li>
+<span>
+<a href="#sec_data_interfaces" onclick="rtwTableExpand(window.document, window.document.getElementById('rtwIdDataInterface_table_003_control'), 'rtwIdDataInterface_table_003')">
+数据接口
+</a>
+<ul>
+<li>
+<a href="#sec_inports" onclick="rtwTableExpand(window.document, window.document.getElementById('rtwIdDataInterface_table_003_control'), 'rtwIdDataInterface_table_003')">
+输入端口
+</a>
+
+</li>
+<li>
+<a href="#sec_outports" onclick="rtwTableExpand(window.document, window.document.getElementById('rtwIdDataInterface_table_003_control'), 'rtwIdDataInterface_table_003')">
+输出端口
+</a>
+
+</li>
+<li>
+<a href="#sec_interface_parameters" onclick="rtwTableExpand(window.document, window.document.getElementById('rtwIdDataInterface_table_003_control'), 'rtwIdDataInterface_table_003')">
+参数
+</a>
+
+</li>
+<li>
+<a href="#sec_data_stores" onclick="rtwTableExpand(window.document, window.document.getElementById('rtwIdDataInterface_table_003_control'), 'rtwIdDataInterface_table_003')">
+内部数据
+</a>
+
+</li>
+
+</ul>
+</span>
+
+</li>
+
+</ol>
+
+</div>
+<h2 name="sec_简介" id="sec_introduction">
+1. 简介 <span title="Click to shrink or expand section" style="cursor:pointer;font-weight:normal;" id="rtwIdDataInterface_table_001_control" onclick ="if (rtwTableShrink) rtwTableShrink(window.document, this, 'rtwIdDataInterface_table_001', false)"><span class="shrink-button">[<u>show</u>]</span></span>
+</h2>
+<table width="100%" style="display: none" name="rtwIdDataInterface_table_001" id="rtwIdDataInterface_table_001" border="0">
+<tr>
+<td align="left" valign="top">
+<p>
+代码生成器为模型生成了数据代码接口。代码接口报告汇总模型可调用入口函数和数据接口元素(例如根级输入端口和输出端口)的接口代码。
+</p>
+
+</td>
+
+</tr>
+
+</table>
+<h2 name="sec_函数接口" id="sec_execution">
+2. 函数接口 <span title="Click to shrink or expand section" style="cursor:pointer;font-weight:normal;" id="rtwIdDataInterface_table_002_control" onclick ="if (rtwTableShrink) rtwTableShrink(window.document, this, 'rtwIdDataInterface_table_002', false)"><span class="shrink-button">[<u>hide</u>]</span></span>
+</h2>
+<table width="100%" name="rtwIdDataInterface_table_002" id="rtwIdDataInterface_table_002" border="0">
+<tr>
+<td align="left" valign="top">
+外部代码通过调用为模型生成的入口函数来启动生成代码的执行。代码生成器为模型生成的函数代码类型取决于在模型中表示的建模样式和周期性速率。有关详细信息，请参阅<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'helpview(fullfile(docroot,\'toolbox\',\'ecoder\',\'helptargets.map\'),\'model_entry_points\')'})" >为模型入口函数配置生成的 C 函数接口</a><br><br>
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<section id="sec_initialize_functions">
+<h3>
+2.1 初始化函数
+</h3>
+<p>
+初始化入口函数实现启动行为。在模型中，Initialize Function 模块显式表示启动行为。
+</p>
+<div id="fcn_PendulumQuickStart_RL_initialize">
+<h4 class="function">
+PendulumQuickStart_RL_initialize
+</h4>
+<span class="description">
+生成代码的初始化入口函数
+</span>
+<div class="programlisting">
+<code class="usage"><span class="include">#include "<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'jumpToCode',location:'PendulumQuickStart_RL.h'})" class="include">PendulumQuickStart_RL.h</a>"</span>
+void <a href="javascript: void(0)" onclick="postParentWindowMessage({message:'jumpToCode',location:'PendulumQuickStart_RL_initialize'})" class="fcn">PendulumQuickStart_RL_initialize</a>(void)</code>
+</div>
+</div>
+</section>
+<section id="sec_terminate_functions">
+<h3>
+2.2 终止函数
+</h3>
+<p>
+终止入口函数实现关闭行为。在模型中，Terminate Function 模块显式表示关闭行为。
+</p>
+<div id="fcn_PendulumQuickStart_RL_terminate">
+<h4 class="function">
+PendulumQuickStart_RL_terminate
+</h4>
+<span class="description">
+生成代码的终止入口函数
+</span>
+<div class="programlisting">
+<code class="usage"><span class="include">#include "<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'jumpToCode',location:'PendulumQuickStart_RL.h'})" class="include">PendulumQuickStart_RL.h</a>"</span>
+void <a href="javascript: void(0)" onclick="postParentWindowMessage({message:'jumpToCode',location:'PendulumQuickStart_RL_terminate'})" class="fcn">PendulumQuickStart_RL_terminate</a>(void)</code>
+</div>
+</div>
+</section>
+<section id="sec_periodic_functions">
+<h3>
+2.3 周期函数
+</h3>
+<p>
+周期性入口函数实现以固定采样率发生的模型行为。对于基于速率的模型，代码生成器为模型中使用的每个速率生成一个周期性入口函数。在函数调用(导出函数)模型中，指定采样率的 Function Call Subsystem 模块表示周期函数。
+</p>
+<div id="fcn_PendulumQuickStart_RL_step">
+<h4 class="function">
+PendulumQuickStart_RL_step
+</h4>
+<span class="description">
+生成代码的输出入口函数. 必须周期性调用，每 0.004 秒调用一次. 
+</span>
+<div class="programlisting">
+<code class="usage"><span class="include">#include "<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'jumpToCode',location:'PendulumQuickStart_RL.h'})" class="include">PendulumQuickStart_RL.h</a>"</span>
+void <a href="javascript: void(0)" onclick="postParentWindowMessage({message:'jumpToCode',location:'PendulumQuickStart_RL_step'})" class="fcn">PendulumQuickStart_RL_step</a>(void)</code>
+</div>
+</div>
+</section>
+<section id="sec_aperiodic_functions">
+<h3>
+2.4 非周期函数
+</h3>
+<p>
+非周期(异步)入口函数实现异步发生的组件行为。在函数调用(导出函数)模型中，不指定采样率的 Function Call Subsystem 模块表示非周期函数。
+</p>
+<p>
+模型中没有表示非周期函数。
+</p>
+</section>
+
+</td>
+
+</tr>
+
+</table>
+<h2 name="sec_数据接口" id="sec_data_interfaces">
+3. 数据接口 <span title="Click to shrink or expand section" style="cursor:pointer;font-weight:normal;" id="rtwIdDataInterface_table_003_control" onclick ="if (rtwTableShrink) rtwTableShrink(window.document, this, 'rtwIdDataInterface_table_003', false)"><span class="shrink-button">[<u>hide</u>]</span></span>
+</h2>
+<table width="100%" name="rtwIdDataInterface_table_003" id="rtwIdDataInterface_table_003" border="0">
+<tr>
+<td align="left" valign="top">
+数据代码接口将模型数据接口元素(如根级输入端口和输出端口)映射到存储类。存储类指定生成代码中数据元素的外观和位置。存储类支持直接访问数据通信。可用于映射的存储类列表由与模型相关联的 Embedded Coder 字典确定。您可以在模型代码映射中将模型接口元素映射到存储类。<br><br>
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<section id="sec_inports">
+<h3>
+3.1 输入端口
+</h3>
+输入是基于模型根级输入端口的存储类设定在代码中生成的变量。<p>
+模型中不存在输入端口。
+</p>
+</section>
+<section id="sec_outports">
+<h3>
+3.2 输出端口
+</h3>
+输出是基于模型根级输出端口的存储类设定在代码中生成的变量。<p>
+模型中不存在输出端口。
+</p>
+</section>
+<section id="sec_interface_parameters">
+<h3>
+3.3 参数
+</h3>
+参数是生成的代码中的变量，表示模型参数和模型参数参量。当模型代码在目标环境中执行时，将基于存储类设定生成变量并该变量标记为可调或不可调。<div id="fcn_PendulumQuickStart_RL_P.K">
+<h4 class="function">
+PendulumQuickStart_RL_P.K
+</h4>
+<span class="description">
+K 的参数
+</span>
+<div class="programlisting">
+<code class="usage"><span class="include">#include "<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'jumpToCode',location:'PendulumQuickStart_RL.h'})" class="include">PendulumQuickStart_RL.h</a>"</span>
+struct {
+  ...
+  real_T <a href="javascript: void(0)" onclick="postParentWindowMessage({message:'jumpToDeclaration',location:'P_PendulumQuickStart_RL_T_::K,PendulumQuickStart_RL.h'})">K</a>[1][4];
+  ...
+} PendulumQuickStart_RL_P;</code>
+</div>
+</div>
+<div id="fcn_PendulumQuickStart_RL_P.Nbar">
+<h4 class="function">
+PendulumQuickStart_RL_P.Nbar
+</h4>
+<span class="description">
+Nbar 的参数
+</span>
+<div class="programlisting">
+<code class="usage"><span class="include">#include "<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'jumpToCode',location:'PendulumQuickStart_RL.h'})" class="include">PendulumQuickStart_RL.h</a>"</span>
+struct {
+  ...
+  real_T <a href="javascript: void(0)" onclick="postParentWindowMessage({message:'jumpToDeclaration',location:'P_PendulumQuickStart_RL_T_::Nbar,PendulumQuickStart_RL.h'})">Nbar</a>;
+  ...
+} PendulumQuickStart_RL_P;</code>
+</div>
+</div>
+<div id="fcn_PendulumQuickStart_RL_P.CompareToConstant_const">
+<h4 class="function">
+PendulumQuickStart_RL_P.CompareToConstant_const
+</h4>
+<span class="description">
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'PendulumQuickStart_RL:1692\')'})"  name="code2model" class="code2model">&lt;S11&gt;/Compare To Constant</a> 的参数
+</span>
+<div class="programlisting">
+<code class="usage"><span class="include">#include "<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'jumpToCode',location:'PendulumQuickStart_RL.h'})" class="include">PendulumQuickStart_RL.h</a>"</span>
+struct {
+  ...
+  real_T <a href="javascript: void(0)" onclick="postParentWindowMessage({message:'jumpToDeclaration',location:'P_PendulumQuickStart_RL_T_::Dialog:const,PendulumQuickStart_RL.h'})">CompareToConstant_const</a>;
+  ...
+} PendulumQuickStart_RL_P;</code>
+</div>
+</div>
+<div id="fcn_PendulumQuickStart_RL_P.Mode_Value">
+<h4 class="function">
+PendulumQuickStart_RL_P.Mode_Value
+</h4>
+<span class="description">
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'PendulumQuickStart_RL:1287\')'})"  name="code2model" class="code2model">&lt;S1&gt;/Mode</a> 的参数
+</span>
+<div class="programlisting">
+<code class="usage"><span class="include">#include "<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'jumpToCode',location:'PendulumQuickStart_RL.h'})" class="include">PendulumQuickStart_RL.h</a>"</span>
+struct {
+  ...
+  real_T <a href="javascript: void(0)" onclick="postParentWindowMessage({message:'jumpToDeclaration',location:'P_PendulumQuickStart_RL_T_::Dialog:Value,PendulumQuickStart_RL.h'})">Mode_Value</a>;
+  ...
+} PendulumQuickStart_RL_P;</code>
+</div>
+</div>
+<div id="fcn_PendulumQuickStart_RL_P.Constant_Value">
+<h4 class="function">
+PendulumQuickStart_RL_P.Constant_Value
+</h4>
+<span class="description">
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'PendulumQuickStart_RL:1619\')'})"  name="code2model" class="code2model">&lt;S8&gt;/Constant</a> 的参数
+</span>
+<div class="programlisting">
+<code class="usage"><span class="include">#include "<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'jumpToCode',location:'PendulumQuickStart_RL.h'})" class="include">PendulumQuickStart_RL.h</a>"</span>
+struct {
+  ...
+  real_T <a href="javascript: void(0)" onclick="postParentWindowMessage({message:'jumpToDeclaration',location:'P_PendulumQuickStart_RL_T_::Dialog:Value,PendulumQuickStart_RL.h'})">Constant_Value</a>;
+  ...
+} PendulumQuickStart_RL_P;</code>
+</div>
+</div>
+<div id="fcn_PendulumQuickStart_RL_P.Constant1_Value">
+<h4 class="function">
+PendulumQuickStart_RL_P.Constant1_Value
+</h4>
+<span class="description">
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'PendulumQuickStart_RL:1620\')'})"  name="code2model" class="code2model">&lt;S8&gt;/Constant1</a> 的参数
+</span>
+<div class="programlisting">
+<code class="usage"><span class="include">#include "<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'jumpToCode',location:'PendulumQuickStart_RL.h'})" class="include">PendulumQuickStart_RL.h</a>"</span>
+struct {
+  ...
+  real_T <a href="javascript: void(0)" onclick="postParentWindowMessage({message:'jumpToDeclaration',location:'P_PendulumQuickStart_RL_T_::Dialog:Value,PendulumQuickStart_RL.h'})">Constant1_Value</a>;
+  ...
+} PendulumQuickStart_RL_P;</code>
+</div>
+</div>
+<div id="fcn_PendulumQuickStart_RL_P.Home_Value">
+<h4 class="function">
+PendulumQuickStart_RL_P.Home_Value
+</h4>
+<span class="description">
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'PendulumQuickStart_RL:1284\')'})"  name="code2model" class="code2model">&lt;S1&gt;/Home</a> 的参数
+</span>
+<div class="programlisting">
+<code class="usage"><span class="include">#include "<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'jumpToCode',location:'PendulumQuickStart_RL.h'})" class="include">PendulumQuickStart_RL.h</a>"</span>
+struct {
+  ...
+  real_T <a href="javascript: void(0)" onclick="postParentWindowMessage({message:'jumpToDeclaration',location:'P_PendulumQuickStart_RL_T_::Dialog:Value,PendulumQuickStart_RL.h'})">Home_Value</a>;
+  ...
+} PendulumQuickStart_RL_P;</code>
+</div>
+</div>
+<div id="fcn_PendulumQuickStart_RL_P.Constant_Value_a">
+<h4 class="function">
+PendulumQuickStart_RL_P.Constant_Value_a
+</h4>
+<span class="description">
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'PendulumQuickStart_RL:1298\')'})"  name="code2model" class="code2model">&lt;S13&gt;/Constant</a> 的参数
+</span>
+<div class="programlisting">
+<code class="usage"><span class="include">#include "<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'jumpToCode',location:'PendulumQuickStart_RL.h'})" class="include">PendulumQuickStart_RL.h</a>"</span>
+struct {
+  ...
+  real_T <a href="javascript: void(0)" onclick="postParentWindowMessage({message:'jumpToDeclaration',location:'P_PendulumQuickStart_RL_T_::Dialog:Value,PendulumQuickStart_RL.h'})">Constant_Value_a</a>;
+  ...
+} PendulumQuickStart_RL_P;</code>
+</div>
+</div>
+<div id="fcn_PendulumQuickStart_RL_P.RodOffset_Value">
+<h4 class="function">
+PendulumQuickStart_RL_P.RodOffset_Value
+</h4>
+<span class="description">
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'PendulumQuickStart_RL:1324\')'})"  name="code2model" class="code2model">&lt;S13&gt;/RodOffset</a> 的参数
+</span>
+<div class="programlisting">
+<code class="usage"><span class="include">#include "<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'jumpToCode',location:'PendulumQuickStart_RL.h'})" class="include">PendulumQuickStart_RL.h</a>"</span>
+struct {
+  ...
+  real_T <a href="javascript: void(0)" onclick="postParentWindowMessage({message:'jumpToDeclaration',location:'P_PendulumQuickStart_RL_T_::Dialog:Value,PendulumQuickStart_RL.h'})">RodOffset_Value</a>;
+  ...
+} PendulumQuickStart_RL_P;</code>
+</div>
+</div>
+<div id="fcn_PendulumQuickStart_RL_P.Constant1_Value_h">
+<h4 class="function">
+PendulumQuickStart_RL_P.Constant1_Value_h
+</h4>
+<span class="description">
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'PendulumQuickStart_RL:1299\')'})"  name="code2model" class="code2model">&lt;S13&gt;/Constant1</a> 的参数
+</span>
+<div class="programlisting">
+<code class="usage"><span class="include">#include "<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'jumpToCode',location:'PendulumQuickStart_RL.h'})" class="include">PendulumQuickStart_RL.h</a>"</span>
+struct {
+  ...
+  real_T <a href="javascript: void(0)" onclick="postParentWindowMessage({message:'jumpToDeclaration',location:'P_PendulumQuickStart_RL_T_::Dialog:Value,PendulumQuickStart_RL.h'})">Constant1_Value_h</a>;
+  ...
+} PendulumQuickStart_RL_P;</code>
+</div>
+</div>
+<div id="fcn_PendulumQuickStart_RL_P.Constant1_Value_c">
+<h4 class="function">
+PendulumQuickStart_RL_P.Constant1_Value_c
+</h4>
+<span class="description">
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'PendulumQuickStart_RL:1360\')'})"  name="code2model" class="code2model">&lt;S7&gt;/Constant1</a> 的参数
+</span>
+<div class="programlisting">
+<code class="usage"><span class="include">#include "<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'jumpToCode',location:'PendulumQuickStart_RL.h'})" class="include">PendulumQuickStart_RL.h</a>"</span>
+struct {
+  ...
+  real_T <a href="javascript: void(0)" onclick="postParentWindowMessage({message:'jumpToDeclaration',location:'P_PendulumQuickStart_RL_T_::Dialog:Value,PendulumQuickStart_RL.h'})">Constant1_Value_c</a>;
+  ...
+} PendulumQuickStart_RL_P;</code>
+</div>
+</div>
+<div id="fcn_PendulumQuickStart_RL_P.Constant2_Value">
+<h4 class="function">
+PendulumQuickStart_RL_P.Constant2_Value
+</h4>
+<span class="description">
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'PendulumQuickStart_RL:1361\')'})"  name="code2model" class="code2model">&lt;S7&gt;/Constant2</a> 的参数
+</span>
+<div class="programlisting">
+<code class="usage"><span class="include">#include "<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'jumpToCode',location:'PendulumQuickStart_RL.h'})" class="include">PendulumQuickStart_RL.h</a>"</span>
+struct {
+  ...
+  real_T <a href="javascript: void(0)" onclick="postParentWindowMessage({message:'jumpToDeclaration',location:'P_PendulumQuickStart_RL_T_::Dialog:Value,PendulumQuickStart_RL.h'})">Constant2_Value</a>;
+  ...
+} PendulumQuickStart_RL_P;</code>
+</div>
+</div>
+<div id="fcn_PendulumQuickStart_RL_P.Enable_Value">
+<h4 class="function">
+PendulumQuickStart_RL_P.Enable_Value
+</h4>
+<span class="description">
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'PendulumQuickStart_RL:1282\')'})"  name="code2model" class="code2model">&lt;S1&gt;/Enable</a> 的参数
+</span>
+<div class="programlisting">
+<code class="usage"><span class="include">#include "<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'jumpToCode',location:'PendulumQuickStart_RL.h'})" class="include">PendulumQuickStart_RL.h</a>"</span>
+struct {
+  ...
+  real_T <a href="javascript: void(0)" onclick="postParentWindowMessage({message:'jumpToDeclaration',location:'P_PendulumQuickStart_RL_T_::Dialog:Value,PendulumQuickStart_RL.h'})">Enable_Value</a>;
+  ...
+} PendulumQuickStart_RL_P;</code>
+</div>
+</div>
+<div id="fcn_PendulumQuickStart_RL_P.MoveCenter_Value">
+<h4 class="function">
+PendulumQuickStart_RL_P.MoveCenter_Value
+</h4>
+<span class="description">
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'PendulumQuickStart_RL:1288\')'})"  name="code2model" class="code2model">&lt;S1&gt;/Move Center</a> 的参数
+</span>
+<div class="programlisting">
+<code class="usage"><span class="include">#include "<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'jumpToCode',location:'PendulumQuickStart_RL.h'})" class="include">PendulumQuickStart_RL.h</a>"</span>
+struct {
+  ...
+  real_T <a href="javascript: void(0)" onclick="postParentWindowMessage({message:'jumpToDeclaration',location:'P_PendulumQuickStart_RL_T_::Dialog:Value,PendulumQuickStart_RL.h'})">MoveCenter_Value</a>;
+  ...
+} PendulumQuickStart_RL_P;</code>
+</div>
+</div>
+<div id="fcn_PendulumQuickStart_RL_P.Gain_Gain">
+<h4 class="function">
+PendulumQuickStart_RL_P.Gain_Gain
+</h4>
+<span class="description">
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'PendulumQuickStart_RL:1554\')'})"  name="code2model" class="code2model">&lt;S5&gt;/Gain</a> 的参数
+</span>
+<div class="programlisting">
+<code class="usage"><span class="include">#include "<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'jumpToCode',location:'PendulumQuickStart_RL.h'})" class="include">PendulumQuickStart_RL.h</a>"</span>
+struct {
+  ...
+  real_T <a href="javascript: void(0)" onclick="postParentWindowMessage({message:'jumpToDeclaration',location:'P_PendulumQuickStart_RL_T_::Dialog:Gain,PendulumQuickStart_RL.h'})">Gain_Gain</a>;
+  ...
+} PendulumQuickStart_RL_P;</code>
+</div>
+</div>
+<div id="fcn_PendulumQuickStart_RL_P.DeadZone_Start">
+<h4 class="function">
+PendulumQuickStart_RL_P.DeadZone_Start
+</h4>
+<span class="description">
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'PendulumQuickStart_RL:1643\')'})"  name="code2model" class="code2model">&lt;S11&gt;/Dead Zone</a> 的参数
+</span>
+<div class="programlisting">
+<code class="usage"><span class="include">#include "<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'jumpToCode',location:'PendulumQuickStart_RL.h'})" class="include">PendulumQuickStart_RL.h</a>"</span>
+struct {
+  ...
+  real_T <a href="javascript: void(0)" onclick="postParentWindowMessage({message:'jumpToDeclaration',location:'P_PendulumQuickStart_RL_T_::Dialog:LowerValue,PendulumQuickStart_RL.h'})">DeadZone_Start</a>;
+  ...
+} PendulumQuickStart_RL_P;</code>
+</div>
+</div>
+<div id="fcn_PendulumQuickStart_RL_P.DeadZone_End">
+<h4 class="function">
+PendulumQuickStart_RL_P.DeadZone_End
+</h4>
+<span class="description">
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'PendulumQuickStart_RL:1643\')'})"  name="code2model" class="code2model">&lt;S11&gt;/Dead Zone</a> 的参数
+</span>
+<div class="programlisting">
+<code class="usage"><span class="include">#include "<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'jumpToCode',location:'PendulumQuickStart_RL.h'})" class="include">PendulumQuickStart_RL.h</a>"</span>
+struct {
+  ...
+  real_T <a href="javascript: void(0)" onclick="postParentWindowMessage({message:'jumpToDeclaration',location:'P_PendulumQuickStart_RL_T_::Dialog:UpperValue,PendulumQuickStart_RL.h'})">DeadZone_End</a>;
+  ...
+} PendulumQuickStart_RL_P;</code>
+</div>
+</div>
+<div id="fcn_PendulumQuickStart_RL_P.Gain2_Gain">
+<h4 class="function">
+PendulumQuickStart_RL_P.Gain2_Gain
+</h4>
+<span class="description">
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'PendulumQuickStart_RL:1557\')'})"  name="code2model" class="code2model">&lt;S11&gt;/Gain2</a> 的参数
+</span>
+<div class="programlisting">
+<code class="usage"><span class="include">#include "<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'jumpToCode',location:'PendulumQuickStart_RL.h'})" class="include">PendulumQuickStart_RL.h</a>"</span>
+struct {
+  ...
+  real_T <a href="javascript: void(0)" onclick="postParentWindowMessage({message:'jumpToDeclaration',location:'P_PendulumQuickStart_RL_T_::Dialog:Gain,PendulumQuickStart_RL.h'})">Gain2_Gain</a>;
+  ...
+} PendulumQuickStart_RL_P;</code>
+</div>
+</div>
+<div id="fcn_PendulumQuickStart_RL_P.TransferFcn_A">
+<h4 class="function">
+PendulumQuickStart_RL_P.TransferFcn_A
+</h4>
+<span class="description">
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'PendulumQuickStart_RL:1626\')'})"  name="code2model" class="code2model">&lt;S11&gt;/Transfer Fcn</a> 的参数
+</span>
+<div class="programlisting">
+<code class="usage"><span class="include">#include "<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'jumpToCode',location:'PendulumQuickStart_RL.h'})" class="include">PendulumQuickStart_RL.h</a>"</span>
+struct {
+  ...
+  real_T <a href="javascript: void(0)" onclick="postParentWindowMessage({message:'jumpToDeclaration',location:'P_PendulumQuickStart_RL_T_::NonDialog:A,PendulumQuickStart_RL.h'})">TransferFcn_A</a>[2][1];
+  ...
+} PendulumQuickStart_RL_P;</code>
+</div>
+</div>
+<div id="fcn_PendulumQuickStart_RL_P.TransferFcn_C">
+<h4 class="function">
+PendulumQuickStart_RL_P.TransferFcn_C
+</h4>
+<span class="description">
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'PendulumQuickStart_RL:1626\')'})"  name="code2model" class="code2model">&lt;S11&gt;/Transfer Fcn</a> 的参数
+</span>
+<div class="programlisting">
+<code class="usage"><span class="include">#include "<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'jumpToCode',location:'PendulumQuickStart_RL.h'})" class="include">PendulumQuickStart_RL.h</a>"</span>
+struct {
+  ...
+  real_T <a href="javascript: void(0)" onclick="postParentWindowMessage({message:'jumpToDeclaration',location:'P_PendulumQuickStart_RL_T_::NonDialog:C,PendulumQuickStart_RL.h'})">TransferFcn_C</a>[1][2];
+  ...
+} PendulumQuickStart_RL_P;</code>
+</div>
+</div>
+<div id="fcn_PendulumQuickStart_RL_P.Gain3_Gain">
+<h4 class="function">
+PendulumQuickStart_RL_P.Gain3_Gain
+</h4>
+<span class="description">
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'PendulumQuickStart_RL:1664\')'})"  name="code2model" class="code2model">&lt;S11&gt;/Gain3</a> 的参数
+</span>
+<div class="programlisting">
+<code class="usage"><span class="include">#include "<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'jumpToCode',location:'PendulumQuickStart_RL.h'})" class="include">PendulumQuickStart_RL.h</a>"</span>
+struct {
+  ...
+  real_T <a href="javascript: void(0)" onclick="postParentWindowMessage({message:'jumpToDeclaration',location:'P_PendulumQuickStart_RL_T_::Dialog:Gain,PendulumQuickStart_RL.h'})">Gain3_Gain</a>;
+  ...
+} PendulumQuickStart_RL_P;</code>
+</div>
+</div>
+<div id="fcn_PendulumQuickStart_RL_P.undOrder_A">
+<h4 class="function">
+PendulumQuickStart_RL_P.undOrder_A
+</h4>
+<span class="description">
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'PendulumQuickStart_RL:1628\')'})"  name="code2model" class="code2model">&lt;S11&gt;/2nd Order</a> 的参数
+</span>
+<div class="programlisting">
+<code class="usage"><span class="include">#include "<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'jumpToCode',location:'PendulumQuickStart_RL.h'})" class="include">PendulumQuickStart_RL.h</a>"</span>
+struct {
+  ...
+  real_T <a href="javascript: void(0)" onclick="postParentWindowMessage({message:'jumpToDeclaration',location:'P_PendulumQuickStart_RL_T_::NonDialog:A,PendulumQuickStart_RL.h'})">undOrder_A</a>[2][1];
+  ...
+} PendulumQuickStart_RL_P;</code>
+</div>
+</div>
+<div id="fcn_PendulumQuickStart_RL_P.undOrder_C">
+<h4 class="function">
+PendulumQuickStart_RL_P.undOrder_C
+</h4>
+<span class="description">
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'PendulumQuickStart_RL:1628\')'})"  name="code2model" class="code2model">&lt;S11&gt;/2nd Order</a> 的参数
+</span>
+<div class="programlisting">
+<code class="usage"><span class="include">#include "<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'jumpToCode',location:'PendulumQuickStart_RL.h'})" class="include">PendulumQuickStart_RL.h</a>"</span>
+struct {
+  ...
+  real_T <a href="javascript: void(0)" onclick="postParentWindowMessage({message:'jumpToDeclaration',location:'P_PendulumQuickStart_RL_T_::NonDialog:C,PendulumQuickStart_RL.h'})">undOrder_C</a>[1][2];
+  ...
+} PendulumQuickStart_RL_P;</code>
+</div>
+</div>
+<div id="fcn_PendulumQuickStart_RL_P.Gain6_Gain">
+<h4 class="function">
+PendulumQuickStart_RL_P.Gain6_Gain
+</h4>
+<span class="description">
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'PendulumQuickStart_RL:1636\')'})"  name="code2model" class="code2model">&lt;S11&gt;/Gain6</a> 的参数
+</span>
+<div class="programlisting">
+<code class="usage"><span class="include">#include "<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'jumpToCode',location:'PendulumQuickStart_RL.h'})" class="include">PendulumQuickStart_RL.h</a>"</span>
+struct {
+  ...
+  real_T <a href="javascript: void(0)" onclick="postParentWindowMessage({message:'jumpToDeclaration',location:'P_PendulumQuickStart_RL_T_::Dialog:Gain,PendulumQuickStart_RL.h'})">Gain6_Gain</a>;
+  ...
+} PendulumQuickStart_RL_P;</code>
+</div>
+</div>
+<div id="fcn_PendulumQuickStart_RL_P.CartPos_Value">
+<h4 class="function">
+PendulumQuickStart_RL_P.CartPos_Value
+</h4>
+<span class="description">
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'PendulumQuickStart_RL:1589\')'})"  name="code2model" class="code2model">&lt;S11&gt;/Cart-Pos</a> 的参数
+</span>
+<div class="programlisting">
+<code class="usage"><span class="include">#include "<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'jumpToCode',location:'PendulumQuickStart_RL.h'})" class="include">PendulumQuickStart_RL.h</a>"</span>
+struct {
+  ...
+  real_T <a href="javascript: void(0)" onclick="postParentWindowMessage({message:'jumpToDeclaration',location:'P_PendulumQuickStart_RL_T_::Dialog:Value,PendulumQuickStart_RL.h'})">CartPos_Value</a>;
+  ...
+} PendulumQuickStart_RL_P;</code>
+</div>
+</div>
+<div id="fcn_PendulumQuickStart_RL_P.Gain4_Gain">
+<h4 class="function">
+PendulumQuickStart_RL_P.Gain4_Gain
+</h4>
+<span class="description">
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'PendulumQuickStart_RL:1710\')'})"  name="code2model" class="code2model">&lt;S11&gt;/Gain4</a> 的参数
+</span>
+<div class="programlisting">
+<code class="usage"><span class="include">#include "<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'jumpToCode',location:'PendulumQuickStart_RL.h'})" class="include">PendulumQuickStart_RL.h</a>"</span>
+struct {
+  ...
+  real_T <a href="javascript: void(0)" onclick="postParentWindowMessage({message:'jumpToDeclaration',location:'P_PendulumQuickStart_RL_T_::Dialog:Gain,PendulumQuickStart_RL.h'})">Gain4_Gain</a>;
+  ...
+} PendulumQuickStart_RL_P;</code>
+</div>
+</div>
+<div id="fcn_PendulumQuickStart_RL_P.Saturation_UpperSat">
+<h4 class="function">
+PendulumQuickStart_RL_P.Saturation_UpperSat
+</h4>
+<span class="description">
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'PendulumQuickStart_RL:1583\')'})"  name="code2model" class="code2model">&lt;S11&gt;/Saturation</a> 的参数
+</span>
+<div class="programlisting">
+<code class="usage"><span class="include">#include "<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'jumpToCode',location:'PendulumQuickStart_RL.h'})" class="include">PendulumQuickStart_RL.h</a>"</span>
+struct {
+  ...
+  real_T <a href="javascript: void(0)" onclick="postParentWindowMessage({message:'jumpToDeclaration',location:'P_PendulumQuickStart_RL_T_::Dialog:UpperLimit,PendulumQuickStart_RL.h'})">Saturation_UpperSat</a>;
+  ...
+} PendulumQuickStart_RL_P;</code>
+</div>
+</div>
+<div id="fcn_PendulumQuickStart_RL_P.Saturation_LowerSat">
+<h4 class="function">
+PendulumQuickStart_RL_P.Saturation_LowerSat
+</h4>
+<span class="description">
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'PendulumQuickStart_RL:1583\')'})"  name="code2model" class="code2model">&lt;S11&gt;/Saturation</a> 的参数
+</span>
+<div class="programlisting">
+<code class="usage"><span class="include">#include "<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'jumpToCode',location:'PendulumQuickStart_RL.h'})" class="include">PendulumQuickStart_RL.h</a>"</span>
+struct {
+  ...
+  real_T <a href="javascript: void(0)" onclick="postParentWindowMessage({message:'jumpToDeclaration',location:'P_PendulumQuickStart_RL_T_::Dialog:LowerLimit,PendulumQuickStart_RL.h'})">Saturation_LowerSat</a>;
+  ...
+} PendulumQuickStart_RL_P;</code>
+</div>
+</div>
+<div id="fcn_PendulumQuickStart_RL_P.FVolt_A">
+<h4 class="function">
+PendulumQuickStart_RL_P.FVolt_A
+</h4>
+<span class="description">
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'PendulumQuickStart_RL:1649\')'})"  name="code2model" class="code2model">&lt;S11&gt;/F//Volt</a> 的参数
+</span>
+<div class="programlisting">
+<code class="usage"><span class="include">#include "<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'jumpToCode',location:'PendulumQuickStart_RL.h'})" class="include">PendulumQuickStart_RL.h</a>"</span>
+struct {
+  ...
+  real_T <a href="javascript: void(0)" onclick="postParentWindowMessage({message:'jumpToDeclaration',location:'P_PendulumQuickStart_RL_T_::NonDialog:A,PendulumQuickStart_RL.h'})">FVolt_A</a>;
+  ...
+} PendulumQuickStart_RL_P;</code>
+</div>
+</div>
+<div id="fcn_PendulumQuickStart_RL_P.FVolt_C">
+<h4 class="function">
+PendulumQuickStart_RL_P.FVolt_C
+</h4>
+<span class="description">
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'PendulumQuickStart_RL:1649\')'})"  name="code2model" class="code2model">&lt;S11&gt;/F//Volt</a> 的参数
+</span>
+<div class="programlisting">
+<code class="usage"><span class="include">#include "<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'jumpToCode',location:'PendulumQuickStart_RL.h'})" class="include">PendulumQuickStart_RL.h</a>"</span>
+struct {
+  ...
+  real_T <a href="javascript: void(0)" onclick="postParentWindowMessage({message:'jumpToDeclaration',location:'P_PendulumQuickStart_RL_T_::NonDialog:C,PendulumQuickStart_RL.h'})">FVolt_C</a>;
+  ...
+} PendulumQuickStart_RL_P;</code>
+</div>
+</div>
+<div id="fcn_PendulumQuickStart_RL_P.FVolt_D">
+<h4 class="function">
+PendulumQuickStart_RL_P.FVolt_D
+</h4>
+<span class="description">
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'PendulumQuickStart_RL:1649\')'})"  name="code2model" class="code2model">&lt;S11&gt;/F//Volt</a> 的参数
+</span>
+<div class="programlisting">
+<code class="usage"><span class="include">#include "<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'jumpToCode',location:'PendulumQuickStart_RL.h'})" class="include">PendulumQuickStart_RL.h</a>"</span>
+struct {
+  ...
+  real_T <a href="javascript: void(0)" onclick="postParentWindowMessage({message:'jumpToDeclaration',location:'P_PendulumQuickStart_RL_T_::NonDialog:D,PendulumQuickStart_RL.h'})">FVolt_D</a>;
+  ...
+} PendulumQuickStart_RL_P;</code>
+</div>
+</div>
+<div id="fcn_PendulumQuickStart_RL_P.Saturation1_UpperSat">
+<h4 class="function">
+PendulumQuickStart_RL_P.Saturation1_UpperSat
+</h4>
+<span class="description">
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'PendulumQuickStart_RL:1652\')'})"  name="code2model" class="code2model">&lt;S11&gt;/Saturation1</a> 的参数
+</span>
+<div class="programlisting">
+<code class="usage"><span class="include">#include "<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'jumpToCode',location:'PendulumQuickStart_RL.h'})" class="include">PendulumQuickStart_RL.h</a>"</span>
+struct {
+  ...
+  real_T <a href="javascript: void(0)" onclick="postParentWindowMessage({message:'jumpToDeclaration',location:'P_PendulumQuickStart_RL_T_::Dialog:UpperLimit,PendulumQuickStart_RL.h'})">Saturation1_UpperSat</a>;
+  ...
+} PendulumQuickStart_RL_P;</code>
+</div>
+</div>
+<div id="fcn_PendulumQuickStart_RL_P.Saturation1_LowerSat">
+<h4 class="function">
+PendulumQuickStart_RL_P.Saturation1_LowerSat
+</h4>
+<span class="description">
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'PendulumQuickStart_RL:1652\')'})"  name="code2model" class="code2model">&lt;S11&gt;/Saturation1</a> 的参数
+</span>
+<div class="programlisting">
+<code class="usage"><span class="include">#include "<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'jumpToCode',location:'PendulumQuickStart_RL.h'})" class="include">PendulumQuickStart_RL.h</a>"</span>
+struct {
+  ...
+  real_T <a href="javascript: void(0)" onclick="postParentWindowMessage({message:'jumpToDeclaration',location:'P_PendulumQuickStart_RL_T_::Dialog:LowerLimit,PendulumQuickStart_RL.h'})">Saturation1_LowerSat</a>;
+  ...
+} PendulumQuickStart_RL_P;</code>
+</div>
+</div>
+<div id="fcn_PendulumQuickStart_RL_P.Gain_Gain_h">
+<h4 class="function">
+PendulumQuickStart_RL_P.Gain_Gain_h
+</h4>
+<span class="description">
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'PendulumQuickStart_RL:1594\')'})"  name="code2model" class="code2model">&lt;S11&gt;/Gain</a> 的参数
+</span>
+<div class="programlisting">
+<code class="usage"><span class="include">#include "<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'jumpToCode',location:'PendulumQuickStart_RL.h'})" class="include">PendulumQuickStart_RL.h</a>"</span>
+struct {
+  ...
+  real_T <a href="javascript: void(0)" onclick="postParentWindowMessage({message:'jumpToDeclaration',location:'P_PendulumQuickStart_RL_T_::Dialog:Gain,PendulumQuickStart_RL.h'})">Gain_Gain_h</a>;
+  ...
+} PendulumQuickStart_RL_P;</code>
+</div>
+</div>
+<div id="fcn_PendulumQuickStart_RL_P.Gain7_Gain">
+<h4 class="function">
+PendulumQuickStart_RL_P.Gain7_Gain
+</h4>
+<span class="description">
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'PendulumQuickStart_RL:1642\')'})"  name="code2model" class="code2model">&lt;S11&gt;/Gain7</a> 的参数
+</span>
+<div class="programlisting">
+<code class="usage"><span class="include">#include "<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'jumpToCode',location:'PendulumQuickStart_RL.h'})" class="include">PendulumQuickStart_RL.h</a>"</span>
+struct {
+  ...
+  real_T <a href="javascript: void(0)" onclick="postParentWindowMessage({message:'jumpToDeclaration',location:'P_PendulumQuickStart_RL_T_::Dialog:Gain,PendulumQuickStart_RL.h'})">Gain7_Gain</a>;
+  ...
+} PendulumQuickStart_RL_P;</code>
+</div>
+</div>
+<div id="fcn_PendulumQuickStart_RL_P.Constant3_Value">
+<h4 class="function">
+PendulumQuickStart_RL_P.Constant3_Value
+</h4>
+<span class="description">
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'PendulumQuickStart_RL:1707\')'})"  name="code2model" class="code2model">&lt;S18&gt;/Constant3</a> 的参数
+</span>
+<div class="programlisting">
+<code class="usage"><span class="include">#include "<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'jumpToCode',location:'PendulumQuickStart_RL.h'})" class="include">PendulumQuickStart_RL.h</a>"</span>
+struct {
+  ...
+  real_T <a href="javascript: void(0)" onclick="postParentWindowMessage({message:'jumpToDeclaration',location:'P_PendulumQuickStart_RL_T_::Dialog:Value,PendulumQuickStart_RL.h'})">Constant3_Value</a>;
+  ...
+} PendulumQuickStart_RL_P;</code>
+</div>
+</div>
+<div id="fcn_PendulumQuickStart_RL_P.Saturation1_UpperSat_c">
+<h4 class="function">
+PendulumQuickStart_RL_P.Saturation1_UpperSat_c
+</h4>
+<span class="description">
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'PendulumQuickStart_RL:1351\')'})"  name="code2model" class="code2model">&lt;S5&gt;/Saturation1</a> 的参数
+</span>
+<div class="programlisting">
+<code class="usage"><span class="include">#include "<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'jumpToCode',location:'PendulumQuickStart_RL.h'})" class="include">PendulumQuickStart_RL.h</a>"</span>
+struct {
+  ...
+  real_T <a href="javascript: void(0)" onclick="postParentWindowMessage({message:'jumpToDeclaration',location:'P_PendulumQuickStart_RL_T_::Dialog:UpperLimit,PendulumQuickStart_RL.h'})">Saturation1_UpperSat_c</a>;
+  ...
+} PendulumQuickStart_RL_P;</code>
+</div>
+</div>
+<div id="fcn_PendulumQuickStart_RL_P.Saturation1_LowerSat_g">
+<h4 class="function">
+PendulumQuickStart_RL_P.Saturation1_LowerSat_g
+</h4>
+<span class="description">
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'PendulumQuickStart_RL:1351\')'})"  name="code2model" class="code2model">&lt;S5&gt;/Saturation1</a> 的参数
+</span>
+<div class="programlisting">
+<code class="usage"><span class="include">#include "<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'jumpToCode',location:'PendulumQuickStart_RL.h'})" class="include">PendulumQuickStart_RL.h</a>"</span>
+struct {
+  ...
+  real_T <a href="javascript: void(0)" onclick="postParentWindowMessage({message:'jumpToDeclaration',location:'P_PendulumQuickStart_RL_T_::Dialog:LowerLimit,PendulumQuickStart_RL.h'})">Saturation1_LowerSat_g</a>;
+  ...
+} PendulumQuickStart_RL_P;</code>
+</div>
+</div>
+<div id="fcn_PendulumQuickStart_RL_P.Constant_Value_b">
+<h4 class="function">
+PendulumQuickStart_RL_P.Constant_Value_b
+</h4>
+<span class="description">
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'PendulumQuickStart_RL:1733\')'})"  name="code2model" class="code2model">&lt;S5&gt;/Constant</a> 的参数
+</span>
+<div class="programlisting">
+<code class="usage"><span class="include">#include "<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'jumpToCode',location:'PendulumQuickStart_RL.h'})" class="include">PendulumQuickStart_RL.h</a>"</span>
+struct {
+  ...
+  real_T <a href="javascript: void(0)" onclick="postParentWindowMessage({message:'jumpToDeclaration',location:'P_PendulumQuickStart_RL_T_::Dialog:Value,PendulumQuickStart_RL.h'})">Constant_Value_b</a>;
+  ...
+} PendulumQuickStart_RL_P;</code>
+</div>
+</div>
+<div id="fcn_PendulumQuickStart_RL_P.TransferFcn_A_o">
+<h4 class="function">
+PendulumQuickStart_RL_P.TransferFcn_A_o
+</h4>
+<span class="description">
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'PendulumQuickStart_RL:1727\')'})"  name="code2model" class="code2model">&lt;S5&gt;/Transfer Fcn</a> 的参数
+</span>
+<div class="programlisting">
+<code class="usage"><span class="include">#include "<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'jumpToCode',location:'PendulumQuickStart_RL.h'})" class="include">PendulumQuickStart_RL.h</a>"</span>
+struct {
+  ...
+  real_T <a href="javascript: void(0)" onclick="postParentWindowMessage({message:'jumpToDeclaration',location:'P_PendulumQuickStart_RL_T_::NonDialog:A,PendulumQuickStart_RL.h'})">TransferFcn_A_o</a>[2][1];
+  ...
+} PendulumQuickStart_RL_P;</code>
+</div>
+</div>
+<div id="fcn_PendulumQuickStart_RL_P.TransferFcn_C_l">
+<h4 class="function">
+PendulumQuickStart_RL_P.TransferFcn_C_l
+</h4>
+<span class="description">
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'PendulumQuickStart_RL:1727\')'})"  name="code2model" class="code2model">&lt;S5&gt;/Transfer Fcn</a> 的参数
+</span>
+<div class="programlisting">
+<code class="usage"><span class="include">#include "<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'jumpToCode',location:'PendulumQuickStart_RL.h'})" class="include">PendulumQuickStart_RL.h</a>"</span>
+struct {
+  ...
+  real_T <a href="javascript: void(0)" onclick="postParentWindowMessage({message:'jumpToDeclaration',location:'P_PendulumQuickStart_RL_T_::NonDialog:C,PendulumQuickStart_RL.h'})">TransferFcn_C_l</a>[1][2];
+  ...
+} PendulumQuickStart_RL_P;</code>
+</div>
+</div>
+<div id="fcn_PendulumQuickStart_RL_P.Gain3_Gain_a">
+<h4 class="function">
+PendulumQuickStart_RL_P.Gain3_Gain_a
+</h4>
+<span class="description">
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'PendulumQuickStart_RL:1725\')'})"  name="code2model" class="code2model">&lt;S5&gt;/Gain3</a> 的参数
+</span>
+<div class="programlisting">
+<code class="usage"><span class="include">#include "<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'jumpToCode',location:'PendulumQuickStart_RL.h'})" class="include">PendulumQuickStart_RL.h</a>"</span>
+struct {
+  ...
+  real_T <a href="javascript: void(0)" onclick="postParentWindowMessage({message:'jumpToDeclaration',location:'P_PendulumQuickStart_RL_T_::Dialog:Gain,PendulumQuickStart_RL.h'})">Gain3_Gain_a</a>;
+  ...
+} PendulumQuickStart_RL_P;</code>
+</div>
+</div>
+<div id="fcn_PendulumQuickStart_RL_P.undOrder_A_j">
+<h4 class="function">
+PendulumQuickStart_RL_P.undOrder_A_j
+</h4>
+<span class="description">
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'PendulumQuickStart_RL:1722\')'})"  name="code2model" class="code2model">&lt;S5&gt;/2nd Order</a> 的参数
+</span>
+<div class="programlisting">
+<code class="usage"><span class="include">#include "<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'jumpToCode',location:'PendulumQuickStart_RL.h'})" class="include">PendulumQuickStart_RL.h</a>"</span>
+struct {
+  ...
+  real_T <a href="javascript: void(0)" onclick="postParentWindowMessage({message:'jumpToDeclaration',location:'P_PendulumQuickStart_RL_T_::NonDialog:A,PendulumQuickStart_RL.h'})">undOrder_A_j</a>[2][1];
+  ...
+} PendulumQuickStart_RL_P;</code>
+</div>
+</div>
+<div id="fcn_PendulumQuickStart_RL_P.undOrder_C_n">
+<h4 class="function">
+PendulumQuickStart_RL_P.undOrder_C_n
+</h4>
+<span class="description">
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'PendulumQuickStart_RL:1722\')'})"  name="code2model" class="code2model">&lt;S5&gt;/2nd Order</a> 的参数
+</span>
+<div class="programlisting">
+<code class="usage"><span class="include">#include "<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'jumpToCode',location:'PendulumQuickStart_RL.h'})" class="include">PendulumQuickStart_RL.h</a>"</span>
+struct {
+  ...
+  real_T <a href="javascript: void(0)" onclick="postParentWindowMessage({message:'jumpToDeclaration',location:'P_PendulumQuickStart_RL_T_::NonDialog:C,PendulumQuickStart_RL.h'})">undOrder_C_n</a>[1][2];
+  ...
+} PendulumQuickStart_RL_P;</code>
+</div>
+</div>
+<div id="fcn_PendulumQuickStart_RL_P.Gain6_Gain_n">
+<h4 class="function">
+PendulumQuickStart_RL_P.Gain6_Gain_n
+</h4>
+<span class="description">
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'PendulumQuickStart_RL:1726\')'})"  name="code2model" class="code2model">&lt;S5&gt;/Gain6</a> 的参数
+</span>
+<div class="programlisting">
+<code class="usage"><span class="include">#include "<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'jumpToCode',location:'PendulumQuickStart_RL.h'})" class="include">PendulumQuickStart_RL.h</a>"</span>
+struct {
+  ...
+  real_T <a href="javascript: void(0)" onclick="postParentWindowMessage({message:'jumpToDeclaration',location:'P_PendulumQuickStart_RL_T_::Dialog:Gain,PendulumQuickStart_RL.h'})">Gain6_Gain_n</a>;
+  ...
+} PendulumQuickStart_RL_P;</code>
+</div>
+</div>
+<div id="fcn_PendulumQuickStart_RL_P.Switch_Threshold">
+<h4 class="function">
+PendulumQuickStart_RL_P.Switch_Threshold
+</h4>
+<span class="description">
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'PendulumQuickStart_RL:1732\')'})"  name="code2model" class="code2model">&lt;S5&gt;/Switch</a> 的参数
+</span>
+<div class="programlisting">
+<code class="usage"><span class="include">#include "<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'jumpToCode',location:'PendulumQuickStart_RL.h'})" class="include">PendulumQuickStart_RL.h</a>"</span>
+struct {
+  ...
+  real_T <a href="javascript: void(0)" onclick="postParentWindowMessage({message:'jumpToDeclaration',location:'P_PendulumQuickStart_RL_T_::Dialog:Threshold,PendulumQuickStart_RL.h'})">Switch_Threshold</a>;
+  ...
+} PendulumQuickStart_RL_P;</code>
+</div>
+</div>
+<div id="fcn_PendulumQuickStart_RL_P.Gain_Gain_o">
+<h4 class="function">
+PendulumQuickStart_RL_P.Gain_Gain_o
+</h4>
+<span class="description">
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'PendulumQuickStart_RL:1419\')'})"  name="code2model" class="code2model">&lt;S1&gt;/Gain</a> 的参数
+</span>
+<div class="programlisting">
+<code class="usage"><span class="include">#include "<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'jumpToCode',location:'PendulumQuickStart_RL.h'})" class="include">PendulumQuickStart_RL.h</a>"</span>
+struct {
+  ...
+  real_T <a href="javascript: void(0)" onclick="postParentWindowMessage({message:'jumpToDeclaration',location:'P_PendulumQuickStart_RL_T_::Dialog:Gain,PendulumQuickStart_RL.h'})">Gain_Gain_o</a>;
+  ...
+} PendulumQuickStart_RL_P;</code>
+</div>
+</div>
+<div id="fcn_PendulumQuickStart_RL_P.EnableControl_Value">
+<h4 class="function">
+PendulumQuickStart_RL_P.EnableControl_Value
+</h4>
+<span class="description">
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'PendulumQuickStart_RL:1283\')'})"  name="code2model" class="code2model">&lt;S1&gt;/Enable Control</a> 的参数
+</span>
+<div class="programlisting">
+<code class="usage"><span class="include">#include "<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'jumpToCode',location:'PendulumQuickStart_RL.h'})" class="include">PendulumQuickStart_RL.h</a>"</span>
+struct {
+  ...
+  real_T <a href="javascript: void(0)" onclick="postParentWindowMessage({message:'jumpToDeclaration',location:'P_PendulumQuickStart_RL_T_::Dialog:Value,PendulumQuickStart_RL.h'})">EnableControl_Value</a>;
+  ...
+} PendulumQuickStart_RL_P;</code>
+</div>
+</div>
+<div id="fcn_PendulumQuickStart_RL_P.Saturation1_UpperSat_a">
+<h4 class="function">
+PendulumQuickStart_RL_P.Saturation1_UpperSat_a
+</h4>
+<span class="description">
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'PendulumQuickStart_RL:1374\')'})"  name="code2model" class="code2model">&lt;S7&gt;/Saturation1</a> 的参数
+</span>
+<div class="programlisting">
+<code class="usage"><span class="include">#include "<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'jumpToCode',location:'PendulumQuickStart_RL.h'})" class="include">PendulumQuickStart_RL.h</a>"</span>
+struct {
+  ...
+  real_T <a href="javascript: void(0)" onclick="postParentWindowMessage({message:'jumpToDeclaration',location:'P_PendulumQuickStart_RL_T_::Dialog:UpperLimit,PendulumQuickStart_RL.h'})">Saturation1_UpperSat_a</a>;
+  ...
+} PendulumQuickStart_RL_P;</code>
+</div>
+</div>
+<div id="fcn_PendulumQuickStart_RL_P.Saturation1_LowerSat_f">
+<h4 class="function">
+PendulumQuickStart_RL_P.Saturation1_LowerSat_f
+</h4>
+<span class="description">
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'PendulumQuickStart_RL:1374\')'})"  name="code2model" class="code2model">&lt;S7&gt;/Saturation1</a> 的参数
+</span>
+<div class="programlisting">
+<code class="usage"><span class="include">#include "<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'jumpToCode',location:'PendulumQuickStart_RL.h'})" class="include">PendulumQuickStart_RL.h</a>"</span>
+struct {
+  ...
+  real_T <a href="javascript: void(0)" onclick="postParentWindowMessage({message:'jumpToDeclaration',location:'P_PendulumQuickStart_RL_T_::Dialog:LowerLimit,PendulumQuickStart_RL.h'})">Saturation1_LowerSat_f</a>;
+  ...
+} PendulumQuickStart_RL_P;</code>
+</div>
+</div>
+<div id="fcn_PendulumQuickStart_RL_P.DeadZone_Start_a">
+<h4 class="function">
+PendulumQuickStart_RL_P.DeadZone_Start_a
+</h4>
+<span class="description">
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'PendulumQuickStart_RL:1738\')'})"  name="code2model" class="code2model">&lt;S5&gt;/Dead Zone</a> 的参数
+</span>
+<div class="programlisting">
+<code class="usage"><span class="include">#include "<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'jumpToCode',location:'PendulumQuickStart_RL.h'})" class="include">PendulumQuickStart_RL.h</a>"</span>
+struct {
+  ...
+  real_T <a href="javascript: void(0)" onclick="postParentWindowMessage({message:'jumpToDeclaration',location:'P_PendulumQuickStart_RL_T_::Dialog:LowerValue,PendulumQuickStart_RL.h'})">DeadZone_Start_a</a>;
+  ...
+} PendulumQuickStart_RL_P;</code>
+</div>
+</div>
+<div id="fcn_PendulumQuickStart_RL_P.DeadZone_End_f">
+<h4 class="function">
+PendulumQuickStart_RL_P.DeadZone_End_f
+</h4>
+<span class="description">
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'PendulumQuickStart_RL:1738\')'})"  name="code2model" class="code2model">&lt;S5&gt;/Dead Zone</a> 的参数
+</span>
+<div class="programlisting">
+<code class="usage"><span class="include">#include "<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'jumpToCode',location:'PendulumQuickStart_RL.h'})" class="include">PendulumQuickStart_RL.h</a>"</span>
+struct {
+  ...
+  real_T <a href="javascript: void(0)" onclick="postParentWindowMessage({message:'jumpToDeclaration',location:'P_PendulumQuickStart_RL_T_::Dialog:UpperValue,PendulumQuickStart_RL.h'})">DeadZone_End_f</a>;
+  ...
+} PendulumQuickStart_RL_P;</code>
+</div>
+</div>
+<div id="fcn_PendulumQuickStart_RL_P.BufferSize_Value">
+<h4 class="function">
+PendulumQuickStart_RL_P.BufferSize_Value
+</h4>
+<span class="description">
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'PendulumQuickStart_RL:1507\')'})"  name="code2model" class="code2model">&lt;S9&gt;/Buffer Size</a> 的参数
+</span>
+<div class="programlisting">
+<code class="usage"><span class="include">#include "<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'jumpToCode',location:'PendulumQuickStart_RL.h'})" class="include">PendulumQuickStart_RL.h</a>"</span>
+struct {
+  ...
+  uint8_T <a href="javascript: void(0)" onclick="postParentWindowMessage({message:'jumpToDeclaration',location:'P_PendulumQuickStart_RL_T_::Dialog:Value,PendulumQuickStart_RL.h'})">BufferSize_Value</a>;
+  ...
+} PendulumQuickStart_RL_P;</code>
+</div>
+</div>
+<div id="fcn_PendulumQuickStart_RL_P.Constant4_Value">
+<h4 class="function">
+PendulumQuickStart_RL_P.Constant4_Value
+</h4>
+<span class="description">
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'PendulumQuickStart_RL:1509\')'})"  name="code2model" class="code2model">&lt;S9&gt;/Constant4</a> 的参数
+</span>
+<div class="programlisting">
+<code class="usage"><span class="include">#include "<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'jumpToCode',location:'PendulumQuickStart_RL.h'})" class="include">PendulumQuickStart_RL.h</a>"</span>
+struct {
+  ...
+  uint8_T <a href="javascript: void(0)" onclick="postParentWindowMessage({message:'jumpToDeclaration',location:'P_PendulumQuickStart_RL_T_::Dialog:Value,PendulumQuickStart_RL.h'})">Constant4_Value</a>;
+  ...
+} PendulumQuickStart_RL_P;</code>
+</div>
+</div>
+<div id="fcn_PendulumQuickStart_RL_P.Constant1_Value_h5">
+<h4 class="function">
+PendulumQuickStart_RL_P.Constant1_Value_h5
+</h4>
+<span class="description">
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'PendulumQuickStart_RL:1508\')'})"  name="code2model" class="code2model">&lt;S9&gt;/Constant1</a> 的参数
+</span>
+<div class="programlisting">
+<code class="usage"><span class="include">#include "<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'jumpToCode',location:'PendulumQuickStart_RL.h'})" class="include">PendulumQuickStart_RL.h</a>"</span>
+struct {
+  ...
+  uint8_T <a href="javascript: void(0)" onclick="postParentWindowMessage({message:'jumpToDeclaration',location:'P_PendulumQuickStart_RL_T_::Dialog:Value,PendulumQuickStart_RL.h'})">Constant1_Value_h5</a>;
+  ...
+} PendulumQuickStart_RL_P;</code>
+</div>
+</div>
+</section>
+<section id="sec_data_stores">
+<h3>
+3.4 内部数据
+</h3>
+内部数据是生成的代码中的变量，表示信号数据、具有内部状态的模块和数据存储。当模型代码在目标环境中执行时，将基于存储类设定生成变量并该变量标记为测量或非测量。<p>
+模型中没有全局数据存储或具有非自动存储类的数据存储。
+</p>
+</section>
+
+</td>
+
+</tr>
+
+</table>
+
+<script>function postParentWindowMessage(message) {window.parent.postMessage(message, "*");}</script>
+</body>
+
+</html>

@@ -1,0 +1,1 @@
+var PagesHeading = 'Content'; var reportPages = [["摘要","PendulumQuickStart_survey.html"],["子系统报告","PendulumQuickStart_subsystems.html"],["代码接口报告","PendulumQuickStart_interface.html"],["可追溯性报告","PendulumQuickStart_trace.html"],["静态代码度量报告","PendulumQuickStart_metrics.html"],["代码替换报告","PendulumQuickStart_replacements.html"],["代码生成器假设","PendulumQuickStart_coderassumptions.html"]];

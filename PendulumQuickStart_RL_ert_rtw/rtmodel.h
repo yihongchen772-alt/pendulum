@@ -1,0 +1,29 @@
+/*
+ * Academic License - for use in teaching, academic research, and meeting
+ * course requirements at degree granting institutions only.  Not for
+ * government, commercial, or other organizational use.
+ *
+ * File: rtmodel.h
+ *
+ * Code generated for Simulink model 'PendulumQuickStart_RL'.
+ *
+ * Model version                  : 14.20
+ * Simulink Coder version         : 25.1 (R2025a) 21-Nov-2024
+ * C/C++ source code generated on : Fri Apr 17 17:18:53 2026
+ *
+ * Target selection: ert.tlc
+ * Embedded hardware selection: ARM Compatible->ARM Cortex-A (64-bit)
+ * Code generation objectives: Unspecified
+ * Validation result: Not run
+ */
+
+#ifndef rtmodel_h_
+#define rtmodel_h_
+#include "PendulumQuickStart_RL.h"
+#endif                                 /* rtmodel_h_ */
+
+/*
+ * File trailer for generated code.
+ *
+ * [EOF]
+ */
