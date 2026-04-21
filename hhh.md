@@ -1,3 +1,20 @@
+
+logo
+
+
+MiMo Claw
+免费体验
+
+MiMo Chat
+
+
+
+体验剩
+16:48
+
+退出使用
+
+
 怎么给你发长代码
 几种方式都行，看哪个方便：
 
@@ -313,4 +330,62 @@ thetaDot（角速度）	(π/180)/5	/10.0	(π/180)/10.0
 角速度那个 /5：确定是除以 5 对吧？你训练代码里现在是除以 10。
 
 
-确认了我直接改：训练代码、动力模型、部署代码，全部统一到 Simulink 的归一化参数
+确认了我直接改：训练代码、动力模型、部署代码，全部统一到 Simulink 的归一化参数。
+
+啥意思 你问的这些 我有点晕
+
+write /root/.openclaw/workspace/ppocontinue23_final.m
+
+write /root/.openclaw/workspace/fcn_fixed.m
+抱歉，我绕晕你了。简单说：
+
+
+Simulink 在树莓派上已经把编码器转成了归一化状态，你的训练代码只要用同样的归一化就行。
+
+
+我之前发现了两个归一化不一致：
+
+速度：Simulink 除 6.35，你训练除 5.0
+角速度：Simulink 除 5，你训练除 10
+
+直接改掉就行，不用问了。我现在统一所有代码。现在更新部署代码，和训练+Simulink 统一：搞定。总结一下全部改动，三个文件必须一致：
+
+
+
+改动总览
+
+cart_pole_modelsimulink_fixed.m（动力学模型）
+
+b = 5.0 → b = 30.0（官方摩擦系数）
+新增反电动势修正项 Kb = 0.11693
+
+ppocontinue23_final.m（训练代码）
+| 改动 | 原版 | 终版 |
+|------|------|
+| 速度归一化 | xDot/5.0 | xDot/6.35 |
+| 角速度归一化 | thetaDot/10.0 | thetaDot/5.0 |
+| MAX_ACTION | 400 | 400（不变） |
+| ENTROPY_BETA | 0.005 | 0.05 |
+| K_EPOCHS | 10 | 5 |
+| CRITIC_LR | 1e-3 | 3e-4 |
+| 熵衰减 | 有 | 删除 |
+
+
+fcn_fixed.m（部署代码）
+| 改动 | 原版 | 修正版 |
+|------|--------|
+| 速度归一化 | /5.0 | /6.35 |
+| 角速度归一化 | /10.0 | /5.0 |
+| MAX_ACTION | 800 | 400 |
+
+
+
+文件清单
+
+你需要把这三个文件放到一起：
+
+1.ppocontinue23_final.m — 跑训练
+2.cart_pole_modelsimulink_fixed.m — 动力学函数（训练时调用）
+3.fcn_fixed.m — 替换你 Simulink 里的 MATLAB Function 模块
+
+跑完训练后，把生成的 actor_net_cont.mat 和 fcn_fixed.m 一起部署到树莓派上。
