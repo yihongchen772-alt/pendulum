@@ -311,6 +311,7 @@ Switch = 0  →  RL  控制
 - 所有传感器换算公式从 Simulink 源码提取并验证
 - PPO 训练在仿真里收敛（约 300 episodes）
 - RL_Controller 集成到 Simulink，输出方向与 LQR 一致
+- RL_Controller在真机上可以进行运行，前提是手挡住 作为微控 不然会撞到边界
 
 ### 待解决
 
